@@ -23,6 +23,7 @@ app.get("/test/:id", function(req, res, next) {
 
 app.post("/ausgabe", (req, res, next) => {
   res.render("ausgabe", {
+    mitarbeiter: req.body.mitarbeiter,
     datum: req.body.datum,
     stunden: req.body.stunden
   });
