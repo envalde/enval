@@ -13,6 +13,7 @@ app.use(bodyParser.json());
 
 app.get("/", function(req, res) {
   res.render("index", {
+    style: "index",
     titel: "Homde"
   });
 });
@@ -23,6 +24,7 @@ app.get("/test/:id", function(req, res, next) {
 
 app.post("/ausgabe", (req, res, next) => {
   res.render("ausgabe", {
+    style: "style",
     mitarbeiter: req.body.mitarbeiter,
     datum: req.body.datum,
     stunden: req.body.stunden
