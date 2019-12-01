@@ -1,12 +1,12 @@
 .user_selctor {
   height: 100vh;
   background: linear-gradient(
-      140deg,
-      rgba(255, 90, 96, 0.301),
+      120deg,
+      rgba(37, 16, 17, 0.836),
       20%,
-      rgba(71, 26, 26, 0.555)
+      rgba(54, 16, 16, 0.055)
     ),
-    url("https://images.unsplash.com/photo-1575015642299-5b92fcbd0ba4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3900&q=80")
+    url("https://images.unsplash.com/photo-1570348447499-95d8d3b38ae3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80")
       100% / cover fixed;
 }
 .input_user_fields {
