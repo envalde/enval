@@ -2,11 +2,11 @@
   height: 100vh;
   background: linear-gradient(
       120deg,
-      rgba(37, 16, 17, 0.836),
+      rgba(46, 46, 46, 0.671),
       20%,
-      rgba(54, 16, 16, 0.055)
+      rgba(49, 49, 49, 0.123)
     ),
-    url("https://images.unsplash.com/photo-1570348447499-95d8d3b38ae3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80")
+    url("https://images.unsplash.com/photo-1574084764548-8f81b5a280c4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3764&q=80")
       100% / cover fixed;
 }
 .input_user_fields {
