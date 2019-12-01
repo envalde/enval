@@ -11,14 +11,20 @@ app.set("view engine", "handlebars");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.get("/", function(req, res) {
+app.get("/", (req, res) => {
   res.render("index", {
     style: "index",
     titel: "Startseite"
   });
 });
 
-app.get("/test/:id", function(req, res, next) {
+app.get("/uebermich", (req, res) => {
+  res.render("index", {
+    style: "about"
+  });
+});
+
+app.get("/test/:id", (req, res, next) => {
   res.render("test", { output: req.params.id });
 });
 
@@ -32,5 +38,5 @@ app.post("/ausgabe", (req, res, next) => {
 });
 
 app.listen(3000, () => {
-  console.log("Server läuft");
+  console.log("Server gestartet Port: 3000");
 });

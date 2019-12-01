@@ -51,6 +51,11 @@
 .form-control {
   display: inline;
   border-radius: 2px;
+  border: none;
+}
+.form-control:focus{
+	box-shadow: none;
+	border: 1px solid #0f7a57;
 }
 input.form-control{  
 	/* Font & Text */
