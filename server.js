@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.get("/", function(req, res) {
   res.render("index", {
     style: "index",
-    titel: "Homde"
+    titel: "Startseite"
   });
 });
 
