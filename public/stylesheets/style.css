@@ -1,16 +1,31 @@
 .subnav {
-  padding: 5px 0px 5px 0px;
-  background-color: #2e6ccf;
+  padding: 9px 0px 9px 0px;
+  background-color: rgb(46, 108, 207);
   color: #fff;
   font-weight: 600;
   text-align: right;
 }
 .header-has-bg {
   background: linear-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.9)
+      120deg,
+      rgba(46, 46, 46, 0.671),
+      20%,
+      rgba(49, 49, 49, 0.123)
     ),
-    url("https://images.unsplash.com/photo-1579537226059-fabc30ac25ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3302&q=80")
-      100% / cover fixed;
-  height: 320px;
+    url("https://images.unsplash.com/photo-1448630360428-65456885c650?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3294&q=80")
+      100% / cover;
+  height: 400px;
+}
+.header-has-bg::after {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-top: 200px;
+  right: 0;
+  left: 0;
+  width: 100%;
+  min-height: 430px;
+  background-image: linear-gradient(#fff, #fff);
+  transform: skewY(-2deg);
+  transform-origin: top left;
 }
