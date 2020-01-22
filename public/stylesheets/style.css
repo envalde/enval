@@ -1,8 +1,7 @@
-body {
-  padding: 50px;
-  background: #fff;
-}
-
-a {
-  color: #00b7ff;
+.subnav {
+  padding: 5px 0px 5px 0px;
+  background-color: #2e6ccf;
+  color: #fff;
+  font-weight: 600;
+  text-align: right;
 }
