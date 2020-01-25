@@ -1,32 +1,52 @@
-.subnav {
-  padding: 9px 0px 9px 0px;
-  background-color: rgb(46, 108, 207);
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.has-text-sub {
+  color: #9f9fb7;
+}
+.navigationsbereich {
+  background-color: rgba(11, 13, 26, 1);
+}
+.navbar {
+  background-color: rgba(11, 13, 26, 1);
+  width: 100%;
+  margin: auto;
+}
+.navbar-item {
   color: #fff;
-  font-weight: 600;
-  text-align: right;
+}
+.navbar-item:hover {
+  background-color: black !important;
+}
+.navbar-link {
+  color: #fff;
+}
+.navbar-link:hover {
+  background-color: black !important;
+}
+.navbar-link:focus {
+  background-color: black !important;
+}
+.navbar-item.has-dropdown.is-active .navbar-link,
+.navbar-item.has-dropdown:focus .navbar-link,
+.navbar-item.has-dropdown:hover .navbar-link {
+  background-color: black;
+}
+.navbar-dropdown {
+  background-color: rgb(0, 0, 0);
 }
 .header-has-bg {
-  background: linear-gradient(
-      120deg,
-      rgba(46, 46, 46, 0.671),
-      20%,
-      rgba(49, 49, 49, 0.123)
-    ),
-    url("https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3300&q=80")
-      100% / cover;
-  height: 400px;
-  padding: 90px 0px 0px 0px;
-}
-.header-has-bg::after {
-  content: "";
-  display: block;
-  position: absolute;
-  margin-top: 100px;
-  right: 0;
-  left: 0;
-  width: 100%;
-  min-height: 430px;
-  background-image: linear-gradient(#fff, #fff);
-  transform: skewY(-2deg);
-  transform-origin: top left;
+  background: linear-gradient(rgba(11, 13, 26, 1) 20%, rgba(11, 13, 26, 1));
+  height: 600px;
+  text-align: center;
+  padding: 200px 0px 0px 0px;
 }
