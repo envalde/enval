@@ -10,7 +10,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
 }
-@media (min-width: 576px) {
+@media (min-width: 276px) {
   .has-text-sub {
     color: #9f9fb7;
   }
