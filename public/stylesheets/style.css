@@ -56,6 +56,10 @@ body {
     text-align: center;
     padding: 200px 0px 0px 0px;
   }
+  .image-items img {
+    height: 230px;
+    padding: 10px 10px 10px 10px;
+  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
