@@ -3,3 +3,59 @@ body {
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
 }
+.top-nav-bg {
+  background-color: #1a1a1f;
+  width: 100%;
+}
+.top-nav-inhalt {
+  max-width: 1310px;
+  margin: 0px auto;
+  background-color: #1a1a1f;
+  padding: 5px 0px 0px 0px;
+}
+.nav-bg {
+  background-color: #1a1a1f;
+  width: 100%;
+}
+.nav-inhalt {
+  max-width: 1310px;
+  margin: 0px auto;
+  background-color: #1a1a1f;
+}
+.navbar {
+  background-color: #1a1a1f;
+  color: #fff !important;
+  height: 46px;
+  min-height: 0px;
+}
+.navbar-item,
+.navbar-link {
+  color: #dedede;
+  padding: 0px 10px 0px 10px;
+}
+.navbar-item :hover,
+.navbar-link :hover {
+  color: #0062ad;
+}
+.navbar-dropdown .navbar-item {
+  color: #0062ad;
+}
+.logo {
+  padding: 10px 0px 0px 0px;
+}
+.navbar-link.is-active,
+.navbar-link:focus,
+.navbar-link:focus-within,
+.navbar-link:hover,
+a.navbar-item.is-active,
+a.navbar-item:focus,
+a.navbar-item:focus-within,
+a.navbar-item:hover {
+  background-color: #fff;
+}
+.navbar-dropdown {
+  border-top: 3px solid #0062ad;
+}
+.top-nav-items {
+  padding: 0px 10px 0px 10px;
+}
