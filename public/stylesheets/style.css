@@ -128,10 +128,12 @@ html {
   background: #012047;
   padding: 1em;
   border-radius: 0px;
-  /* width: 250px; */
+  width: 100%;
   clip-path: circle(50px at 100% 0%);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
+  position: absolute;
+  z-index: 999;
 }
 .inner:hover {
   clip-path: circle(75%);
@@ -155,6 +157,9 @@ html {
 .inner p {
   color: white;
   font-size: 0.8rem;
+}
+.card-top-image {
+  height: 300px;
 }
 
 @media (min-width: 576px) {
@@ -221,6 +226,42 @@ html {
     z-index: 1;
     top: 42%;
     left: 12%;
+  }
+  .canvas-form {
+    margin-top: -500px;
+    right: 10em;
+    /* height: 100px; */
+    position: absolute;
+    background: rgb(255, 255, 255);
+    width: 25%;
+    padding: 20px 50px 20px 50px;
+    max-width: 25%;
+    box-shadow: 0 2px 9px 2px hsla(0, 0%, 60%, 0.2);
+  }
+  .label {
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: normal;
+    color: #c0b79d;
+    letter-spacing: 2px;
+    margin-bottom: 0;
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .input-form {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    padding: 2px 5px;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .input-form:focus {
+    outline: none;
   }
 }
 
