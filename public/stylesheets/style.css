@@ -90,10 +90,9 @@ html {
 .text-link {
   color: #fff;
   overflow: hidden;
-  letter-spacing: 0.33125em;
   line-height: normal;
   text-decoration: none;
-  text-transform: uppercase;
+  font-size: 1.25rem;
 }
 .text-link:hover {
   color: #fff;
