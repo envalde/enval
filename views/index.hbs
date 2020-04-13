@@ -15,8 +15,8 @@
                   Digitale Kommunikation
                 </p>
                 <h1 class="title is-1 has-text-weight-bold has-text-white">
-                  Wir erleichtern durch digitale Technologien die Kommunikation
-                  mit Ihren Kunden.
+                  Wir
+                  <span id="app"></span>
                 </h1>
                 <a class="subtitle has-text-white" href=""
                   >Case Study <i class="lni lni-chevron-right"></i
@@ -32,6 +32,25 @@
     </div>
     <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
+    <!-- Type Effekt -->
+    <script>
+      var app = document.getElementById("app");
+
+      var typewriter = new Typewriter(app, {
+        loop: true,
+      });
+
+      typewriter
+        .typeString("erleichtern die kommunikation mit Ihren Kunden")
+        .pauseFor(4500)
+        .deleteAll()
+        .typeString("erhöhen Ihre Bekanntheit")
+        .pauseFor(4500)
+        .deleteAll()
+        .typeString("digitalisieren Ihr Unternehmen")
+        .pauseFor(4500)
+        .start();
+    </script>
   </div>
 
   <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
@@ -48,58 +67,42 @@
 
 <div class="startseite-s2">
   <section class="section">
-    <div class="container is-vcentered">
+    <div class="container is-centered">
       <div class="box">
-        <article class="media">
-          <div class="media-content">
-            <div class="content">
-              <form action="">
-                <div class="columns startseite-box-items">
-                  <div class="column">
-                    <h3 class="title">Ich Möchte mit</h3>
-                  </div>
-                  <div class="column is-centered">
-                    <div class="field">
-                      <div class="control">
-                        <div class="select is-info">
-                          <select>
-                            <option>Select dropdown</option>
-                            <option>With options</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column">
-                    mehr
-                  </div>
-                  <div class="column">
-                    <div class="field">
-                      <div class="control">
-                        <div class="select is-info">
-                          <select>
-                            <option>Select dropdown</option>
-                            <option>With options</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="column">
-                    <button class="button is-link is-outlined">
-                      Lösungen finden
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+        <div class="columns">
+          <div class="column border-right">
+            <i class="lni lni-grid-alt big-icon"></i>
+            <p>
+              <b>Modulare Software</b> <br />
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            </p>
+            <a href="">Mehr dazu</a>
           </div>
-        </article>
+          <div class="column border-right">
+            <i class="lni lni-bulb big-icon"></i>
+            <p>
+              <b>Modulare Software</b> <br />
+              Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+              nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            </p>
+            <a href="">Mehr dazu</a>
+          </div>
+          <div class="column">
+            <i class="lni lni-library big-icon"></i>
+            <p>
+              <b>Academy</b> <br />
+              Erlenen sie selbst, wie Websiten funktionieren und worauf sie bei
+              SEO achten müssen in unseren eigenen Schulungen.
+            </p>
+            <a href="">Mehr dazu</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 </div>
-<section class="hero is-light is-medium">
+<section class="hero is-white is-medium">
   <div class="hero-body">
     <div class="container">
       <div class="columns">
