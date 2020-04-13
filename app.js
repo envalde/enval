@@ -11,7 +11,7 @@ const cors = require('cors');
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-var apiRouter = require('./router/api');
+var apiRouter = require('./routes/api');
 
 var app = express();
 
@@ -27,7 +27,6 @@ app.engine(
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
-a
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
