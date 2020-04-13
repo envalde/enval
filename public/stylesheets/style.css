@@ -87,6 +87,14 @@ body {
 }
 .liste li {
   margin-bottom: 20px;
+  transition: ease-in 0.3s;
+}
+.liste li:hover {
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+  padding: 10px 1px 10px 20px;
+  transition: ease-in 0.3s;
+  border-radius: 3px;
 }
 .kunden {
   text-align: center;
