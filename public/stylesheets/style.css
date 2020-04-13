@@ -21,7 +21,6 @@
 }
 html * {
   font-family: manrope;
-  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -57,8 +56,17 @@ body {
   background-color: rgba(18, 18, 18, 0.3);
 }
 .startseite-s2 {
-  margin-top: -50px;
+  margin-top: -100px;
+  position: relative;
   z-index: 19;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.border-right {
+  border-right: 1px solid #d4d4d4;
+}
+.startseite-box-item {
+  text-align: center;
 }
 @media (min-width: 576px) {
 }
