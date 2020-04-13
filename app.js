@@ -10,11 +10,7 @@ const cors = require("cors");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
-<<<<<<< HEAD
 var apiRouter = require("./routes/api");
-=======
-var apiRouter = require('./routes/api');
->>>>>>> a3e71ae740b844da6633784c2cb088c379d697ea
 
 var app = express();
 
@@ -30,10 +26,6 @@ app.engine(
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "hbs");
 
-<<<<<<< HEAD
-a;
-=======
->>>>>>> a3e71ae740b844da6633784c2cb088c379d697ea
 app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
