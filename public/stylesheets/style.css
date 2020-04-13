@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: "manrope";
   src: url("../font/manrope-bold.woff2") format("woff2"),
     url("../font/Manrope-Bold.woff") format("woff");
@@ -18,9 +18,19 @@
     url("../font/Manrope-Medium.woff") format("woff");
   font-weight: 500;
   font-display: swap;
+} */
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
 }
 html * {
-  font-family: manrope;
+  font-family: "Inter", sans-serif;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -35,9 +45,6 @@ body {
   border-radius: 0px;
 }
 
-.startseite-1 {
-  margin-top: -60px;
-}
 /* .navbar {
   background-color: transparent;
 } */
@@ -72,6 +79,48 @@ body {
   color: #3273dc;
   font-size: 2em;
   margin-bottom: 7px;
+}
+.image-round-shadow {
+  border-radius: 3px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+.liste li {
+  margin-bottom: 20px;
+}
+.kunden {
+  text-align: center;
+}
+.kunden img {
+  height: 30px;
+  -webkit-filter: opacity(0.7);
+  filter: opacity(0.7);
+}
+.kunden img:hover {
+  -webkit-filter: opacity(1);
+  filter: opacity(1);
+  transition: ease-in 0.5s;
+}
+.e-image-box {
+  background-position: center;
+  background-size: cover;
+  border-radius: 3px;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+.e-image-box-inner {
+  padding-top: 20em;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 2em;
+  background-color: rgba(0, 0, 0, 0.521);
+}
+.e-image-box-inner h4 {
+  font-size: 2em;
+  font-weight: 600;
+}
+.e-image-box-inner a {
+  color: #fff;
 }
 @media (min-width: 576px) {
 }
