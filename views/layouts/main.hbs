@@ -11,11 +11,37 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
     <link rel="stylesheet" href="https://cdn.lineicons.com/2.0/LineIcons.css" />
+    <link rel="stylesheet" href="stylesheets/chatbot.css" />
     <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <div class="e-assistent" onclick="esmartassistent()">
+      <i class="lni lni-comments"></i>
+    </div>
 
+    <div class="e-assist-window view-e-assist-window" id="e-assist-window">
+      <i class="lni lni-close e-smart-close" onclick="esmartassistent()"></i>
+      <div class="e-assist-window-heading">
+        Digitaler Assistent
+      </div>
+      <div class="e-assist-windwo-chat">
+        <div id="eapp">
+          <div class="e-smart-welcome-message">
+            <a>
+              Hallo, ich bin Ihr Digitaler Assistent. Ich habe für Sie relevante
+              Punkte zusammengefasst. Klicken Sie einfach auf einen Punkt, der
+              Sie interessiert.</a
+            >
+          </div>
+          {{#each chats}}
+          <div class="e-smart-message">
+            <a href="{{ this.[1] }}">{{ this.[0] }}</a>
+          </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
     <div class="navigation">
       <nav class="navbar is-transparent">
         <div class="container">
