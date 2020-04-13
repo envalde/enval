@@ -10,7 +10,7 @@ var elements = [
   [
     "Ich möchte mir Gebrauchtwagen ansehen",
     "https://www.autoscout24.de/haendler/autohaus-sing-gmbh-und-co-kg/fahrzeuge#atype=C&cid=16927&ustate=U,N,A&sort=price&results=20&page=1",
-  ],
+  ]
 ];
 
 module.exports = {
