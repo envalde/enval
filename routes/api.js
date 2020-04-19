@@ -9,7 +9,7 @@ const db = require('../lib/database');
 const userMiddleware = require('../middleware/users');
 
 router.post('/login', (req, res, next) => {
-    db.query('SELECT * FROM users WHERE username = ${db.escape(req.body.username)};',
+    db.query('SELECT * FROM users WHERE username = "enval"',
         (err, result) => {
             if (err) {
                 throw err;

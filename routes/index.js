@@ -8,4 +8,10 @@ router.get("/", function (req, res, next) {
   res.render("index", { title: "Enval", chats: elements });
 });
 
+
+router.get('/login', function (req, res, next) {
+  res.render('login', {
+    title: 'login'
+  });
+});
 module.exports = router;
