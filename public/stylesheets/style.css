@@ -42,7 +42,7 @@ body {
   background-color: #131313;
 }
 .button {
-  border-radius: 0px;
+  /* border-radius: 0px; */
 }
 
 /* .navbar {
@@ -58,8 +58,9 @@ body {
   width: 100%;
 }
 .s-slider-inner {
-  padding-top: 20em;
-  padding-bottom: 10em;
+  padding-top: 10em;
+  padding-bottom: 6em;
+  min-height: 30vh;
   background-color: rgba(18, 18, 18, 0.3);
 }
 .startseite-s2 {
