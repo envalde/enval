@@ -57,6 +57,26 @@
 .provenexpert {
   text-align: center;
 }
+.bild-unterschrift-kachel-rechts {
+  padding: 1em;
+  text-align: center;
+  margin-top: -35px;
+  right: 2em;
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+}
+.bild-unterschrift-kachel-links {
+  padding: 1em;
+  text-align: center;
+  margin-top: -35px;
+  left: 2em;
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+}
 @media (min-width: 576px) {
 }
 
