@@ -1,5 +1,5 @@
 {
-  "name": "webpack-handlebars-static",
+  "name": "enval",
   "version": "1.0.0",
   "description": "A webpack static site builder using handlebars templates, sass and babel.",
   "main": "index.js",
@@ -11,7 +11,7 @@
     "clean": "rimraf build generated",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Mitch Heddles <mitchell.heddles@gmail.com>",
+  "author": "enval <info@enval.de>",
   "license": "MIT",
   "browserslist": [
     "> 1%",
