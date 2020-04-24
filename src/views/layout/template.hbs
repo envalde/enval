@@ -1,13 +1,18 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="de" dir="ltr">
+
 <head>
-{{#block "head"}}{{/block}}
-<% for (var css in htmlWebpackPlugin.files.css) { %>
-<link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
-<% } %>
+  {{#block "head"}}{{/block}}
+  <% for (var css in htmlWebpackPlugin.files.css) { %>
+  <link href="<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet">
+  <% } %>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
 </head>
 
 <body class="{{bodyclass}}">
+  {{#block "navigation"}}{{/block}}
   {{#block "body"}}{{/block}}
 </body>
 
@@ -20,4 +25,5 @@
 <% if (htmlWebpackPlugin.options.devServer) { %>
 <script src="<%= htmlWebpackPlugin.options.devServer%>/webpack-dev-server.js"></script>
 <% } %>
+
 </html>
