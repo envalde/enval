@@ -3,13 +3,15 @@
 }
 
 .hero-bild {
-  background-color: lightgray;
   text-align: center;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-bild-inner {
   padding-top: 4rem;
   padding-bottom: 4rem;
+  background-color: rgba(0, 0, 0, 0.26);
 }
 
 .icons-inline {

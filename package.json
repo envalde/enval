@@ -1,7 +1,7 @@
 {
-  "name": "static-html-webpack-boilerplate",
+  "name": "enval",
   "version": "1.1.1",
-  "description": "Modern tooling for old-school static webpage development",
+  "description": "enval",
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.config.prod.js",
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "git+https://github.com/erickzhao/static-html-webpack-boilerplate.git"
   },
-  "author": "erick zhao",
+  "author": "enval",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.7.4",
