@@ -131,309 +131,56 @@
     <!-- Navigation Ende -->
 
     <!-- Content -->
-    <div
-      class="container hero-bild"
-      style="background-image: url(./static/headerimage.jfif);"
-    >
-      <div class="hero-bild-inner">
-        <h1 class="title is-2 has-text-white">Neue digitale Technologien</h1>
-        <p class="subtitle has-text-white">für Ihr Unternehmen</p>
-        <a href="#leistungen" class="button is-link">
-          <div class="icons-inline">
-            <span class="button-text">
-              Unsere Angebote
-            </span>
-            <span class="material-icons">
-              launch
-            </span>
-          </div>
-        </a>
-      </div>
-    </div>
     <section class="section">
       <div class="container">
-        <h2 class="title">Wir ermöglichen Digitalenfortschritt</h2>
-        <p>
-          Wir realisieren für ihr Unternehmen digitale Lösungen und Prozesse zur
-          Optimierung der Kommunikation zu ihren Kunden und Interessenten.
-          <br />
-          Durch neue Schnittstellen und Technologien ist ihr Unternehmen der
-          Digitalisierung wieder einen Schritt näher.
-        </p>
-        <br />
-        <a href="" class="text-link">
-          <div class="icons-inline">
-            <span class="button-text">
-              Kostenlose Beratung
-            </span>
-            <span class="material-icons">
-              arrow_forward
-            </span>
-          </div>
-        </a>
-      </div>
-    </section>
-    <section class="section" id="leistungen">
-      <div class="container">
+        <h1 class="title">Leasing Konfigurator</h1>
         <div class="columns">
-          <div class="column">
-            <div class="box">
-              <span
-                class="material-icons box-icon"
-                style="background-color: #c62828;"
-              >
-                question_answer
-              </span>
-              <p class="box-heading">
-                Consulting
-              </p>
-              <p>
-                Wir beraten Sie in den Bereichen Internetauftritt (Webseiten,
-                SocialMedia). Analysieren neue Möglichkeiten und nicht genutzte
-                Potenziale.
-              </p>
+          <div class="column has-background-light">
+            <h2 class="title">Konfiguration</h2>
+            <p>Monats Kontigente</p>
+            <div class="select">
+              <select id="stunden" onchange="kontingent()">
+                <option value="">Bitte wählen</option>
+                <option value="19,99">Variabel</option>
+                <option value="59,99">1 Stunde</option>
+                <option value="229,99">4 Stunden</option>
+                <option value="417,99">8 Stunden</option>
+                <option value="500,21">10 Stunden</option>
+              </select>
+            </div>
+            <hr />
+            <p>Doamins</p>
+            <div class="select">
+              <select id="domains" onchange="domain_preis()">
+                <option value="">Bitte wählen</option>
+                <option value="1,99">1</option>
+                <option value="2,99">2</option>
+                <option value="3,99">3</option>
+                <option value="4,99">4</option>
+              </select>
             </div>
           </div>
           <div class="column">
-            <div class="box">
-              <span
-                class="material-icons box-icon"
-                style="background-color: #fdd835;"
-              >
-                timeline
-              </span>
-              <p class="box-heading">
-                Umsetzung
-              </p>
-              <p>
-                Wir kümmern uns um die Umsetzung von Webseiten oder Marketing
-                Strategien sowie die Erstellung von intelligenten Webanwendungen
-                und Apps.
-              </p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box">
-              <span
-                class="material-icons box-icon"
-                style="background-color: #43a047;"
-              >
-                code
-              </span>
-              <p class="box-heading">
-                Betreuung
-              </p>
-              <p>
-                Wir betreuen ihre Webseite und kümmern uns um
-                Suchmaschinenoptimierung und Änderungswünsche sowie Technische
-                Korrektheit und Fehlerfreiheit.
-              </p>
-            </div>
-          </div>
-          <div class="column">
-            <div class="box">
-              <span
-                class="material-icons box-icon"
-                style="background-color: #039be5;"
-              >
-                fingerprint
-              </span>
-              <p class="box-heading">
-                Betrieb
-              </p>
-              <p>
-                Wir kümmern uns um performantes und sicheres Hosting ihrer
-                Webseite sowie die Verwaltung ihrer E-Mail Adressen und
-                Einrichtung von Domains.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="columns is-vcentered">
-          <div class="column">
-            <h3 class="title">
-              Wir ermöglichen digitale Geschäftsmodelle und Prozesse
-            </h3>
+            <h3 class="title">Kostenübersicht</h3>
+            <hr />
             <p>
-              Wir analysieren gemeinsam mit ihnen die aktuelle Situation in
-              ihrem Unternehmen. Darauf aufbauend erstellen wir neue Konzepte
-              mit digitalen Lösungsansätzen und Technologien im Bereich Web.
-              <br />
-              <br />
-              Die Umsetzung erfolgt direkt von Enval. Daraus ergibt sich der
-              Vorteil, das Planung, Gestaltung und Realisation aus einer Hand
-              hervor gehen.
-              <br />
-              <br />
-              Langfristig werden neue Lösungen überwacht und basierend auf
-              monitorings werden kontinuirlich Verbesserungen vorgenommen.
+              Preis Kontingente:
+              <span id="ausgabe_stunden_preis"></span>
             </p>
-            <br />
-            <a href="" class="text-link">
-              <div class="icons-inline">
-                <span class="button-text">
-                  Kostenlose Beratung
-                </span>
-                <span class="material-icons">
-                  arrow_forward
-                </span>
-              </div>
-            </a>
-          </div>
-          <div class="column">
-            <img src="./static/tablet.jfif" alt="" />
-            <div
-              class="bild-unterschrift-kachel-rechts"
-              style="background-color: #43a047;"
-            >
-              <span>Digitale Lösungen für Kundenbeziehungen</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="columns is-vcentered">
-          <div class="column">
-            <img src="./static/meeting.jfif" alt="" />
-            <div
-              class="bild-unterschrift-kachel-links"
-              style="background-color: #039be5;"
-            >
-              <span>Kunden Gewinnung durch Suchmaschinen Optimierung</span>
-            </div>
-          </div>
-          <div class="column">
-            <h4 class="title">Fortschrittliche Technologien im Web</h4>
             <p>
-              Wir erstellen Webseiten basierend auf modernen Technologien. Egal
-              ob ihr Unternehmen zu repräsentieren oder um spezielle Zielgruppen
-              abzudecken.
-              <br />
-              <br />
-              SEO beginnt bereits bei der Programmierung von Hompages. Der
-              Aufbau der Seiten wird nach einem Strengen Plan erstellt, um
-              später bestmögliche Ergebnisse in Suchmaschinen zu erreichen.
+              Preis Domain(s):
+              <span id="domains_ausgabe"></span>
             </p>
-            <br />
-            <a href="" class="text-link">
-              <div class="icons-inline">
-                <span class="button-text">
-                  Über unsere Technologien
-                </span>
-                <span class="material-icons">
-                  arrow_forward
-                </span>
-              </div>
-            </a>
+            <hr />
+            <p>
+              Endpreis:
+              <span id="endpreis_ausgabe"></span>
+            </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container hero-bild">
-        <div class="hero-bild-inner">
-          <h5 class="title">Test</h5>
-          <p class="subtitle">Hier kommt test 2</p>
-          <a href="" class="button is-link">
-            <div class="icons-inline">
-              <span class="button-text">
-                Unsere Angebote
-              </span>
-              <span class="material-icons">
-                launch
-              </span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="kunden">
-          <span class="material-icons big-icon">
-            people_outline
-          </span>
-          <h6 class="title">Transparenz schafft Vertrauen</h6>
-          <p>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
-            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
-            sadipscing elitr, sed diam
-          </p>
-          <br />
-          <div class="columns">
-            <div class="column">
-              <img
-                src="https://enval.de/images/kunden/autohaus_sing.png"
-                alt=""
-              />
-            </div>
-            <div class="column">
-              <img
-                src="https://enval.de/images/kunden/autohaus_sing.png"
-                alt=""
-              />
-            </div>
-            <div class="column">
-              <img
-                src="https://enval.de/images/kunden/autohaus_sing.png"
-                alt=""
-              />
-            </div>
-            <div class="column">
-              <img
-                src="https://enval.de/images/kunden/autohaus_sing.png"
-                alt=""
-              />
-            </div>
-            <div class="column">
-              <img
-                src="https://enval.de/images/kunden/autohaus_sing.png"
-                alt=""
-              />
-            </div>
-            <div class="column">
-              <img
-                src="https://enval.de/images/kunden/autohaus_sing.png"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div class="provenexpert">
-          <!-- ProvenExpert Bewertungssiegel -->
-          <a
-            href="https://www.provenexpert.com/enval/?utm_source=Widget&amp;utm_medium=Widget&amp;utm_campaign=Widget"
-            title="Kundenbewertungen &amp; Erfahrungen zu Enval. Mehr Infos anzeigen."
-            target="_blank"
-            style="text-decoration: none;"
-            ><img
-              src="https://images.provenexpert.com/ae/fc/4d152aae0ceb9e9e8c1d46edf89f/widget_portrait_180_de_0.png"
-              alt="Erfahrungen &amp; Bewertungen zu Enval"
-              width="180"
-              height="216"
-              style="border: 0;"
-          /></a>
-          <!-- ProvenExpert Bewertungssiegel -->
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="container">
-        <h6 class="title">Beratung</h6>
       </div>
     </section>
     <!-- Content -->
+    <script src="./static/konfigurator.js"></script>
   <script type="text/javascript" src="app.bundle.js"></script></body>
 </html>
