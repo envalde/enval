@@ -68,10 +68,6 @@
   margin-bottom: 1em;
 }
 
-.provenexpert {
-  text-align: center;
-}
-
 .bild-unterschrift-kachel-rechts {
   padding: 1em;
   text-align: center;
@@ -93,7 +89,16 @@
   font-weight: 600;
   border-radius: 2px;
 }
-
+.provenundtext {
+  text-align: left !important;
+}
+.provenexpert {
+  padding: 0px !important;
+  position: relative;
+}
+.center {
+  text-align: center;
+}
 @media (min-width: 576px) {
 }
 
